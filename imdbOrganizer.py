@@ -18,12 +18,26 @@ class color:
 print color.CYAN + color.BOLD +  "{:50} {:40} {:<10}".format("Folder Name","Movie Title","Rating") + color.END
 
 
+def getName(fullpath):
+	total_count = fullpath.count('/')
+	count = 0
+	for i in range(len(fullpath)):
+		if fullpath[i] == '/':
+			count += 1
+			if count == total_count-1:
+				return fullpath[i+1:]
+
+
 def formattedInfo(result):
 	return "{:40} {:<10}".format((result['title'])[:35], result['vote_average'])
 
+
 allMovies = []
 
-for folder in glob.glob("*/"):
+for folder in glob.glob("example/HDD/*/"):
+
+	# Fullpath doesn't work
+	folder = getName(folder)
 
 	print "{:50}".format(folder[:45]),
 
