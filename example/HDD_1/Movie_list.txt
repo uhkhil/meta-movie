@@ -1,0 +1,9 @@
+This list was generated with meta-movie. [https://www.github.com/akhilnareshkumar/meta-movie] 
+
+
+Movie Title                              Rating    
+-----------------------------------------------
+Dead Poets Society                       8.1       
+Zindagi Na Milegi Dobara                 7.5       
+Zero Dark Thirty                         6.6       
+Babe                                     6         

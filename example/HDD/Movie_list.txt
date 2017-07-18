@@ -1,0 +1,289 @@
+This list was generated with meta-movie. [https://www.github.com/akhilnareshkumar/meta-movie] 
+
+
+Movie Title                              Rating    
+-----------------------------------------------
+The Shawshank Redemption                 8.5       
+Whiplash                                 8.3       
+Sunset Boulevard                         8.2       
+The Green Mile                           8.2       
+Fight Club                               8.2       
+Seven Samurai                            8.2       
+One Flew Over the Cuckoo's Nest          8.2       
+The Good, the Bad and the Ugly           8.1       
+Dead Poets Society                       8.1       
+The Intouchables                         8.1       
+Cinema Paradiso                          8.1       
+Room                                     8.1       
+Interstellar                             8.1       
+The Lord of the Rings: The Return o      8.1       
+Ikiru                                    8         
+The Grand Budapest Hotel                 8         
+The Lord of the Rings: The Two Towe      8         
+Star Wars                                8         
+The Lord of the Rings: The Fellowsh      8         
+Yojimbo                                  8         
+The Shining                              8         
+The Pianist                              8         
+Prisoners                                7.9       
+The Departed                             7.9       
+Gone Girl                                7.9       
+The Wolf of Wall Street                  7.9       
+Incendies                                7.9       
+Dallas Buyers Club                       7.9       
+Full Metal Jacket                        7.9       
+To Kill a Mockingbird                    7.9       
+Saving Private Ryan                      7.9       
+There Will Be Blood                      7.9       
+Scarface                                 7.9       
+North by Northwest                       7.8       
+The Secret in Their Eyes                 7.8       
+The Help                                 7.8       
+Trainspotting                            7.8       
+The Theory of Everything                 7.8       
+Dial M for Murder                        7.8       
+Throne of Blood                          7.8       
+Into the Wild                            7.8       
+Her                                      7.8       
+Spotlight                                7.8       
+The Thing                                7.8       
+Singin' in the Rain                      7.8       
+The Truman Show                          7.8       
+Donnie Darko                             7.7       
+Toy Story                                7.7       
+The Perks of Being a Wallflower          7.7       
+Raiders of the Lost Ark                  7.7       
+Mary and Max                             7.7       
+Going Clear: Scientology and the Pr      7.7       
+Heat                                     7.7       
+The Deer Hunter                          7.7       
+Three Colors: Blue                       7.7       
+Rush                                     7.7       
+Unforgiven                               7.7       
+Heat                                     7.7       
+The Man from Earth                       7.7       
+Mystic River                             7.6       
+Kingsman: The Secret Service             7.6       
+Snatch                                   7.6       
+Spring, Summer, Fall, Winter... and      7.6       
+In the Name of the Father                7.6       
+Moonrise Kingdom                         7.6       
+Nightcrawler                             7.6       
+The Notebook                             7.6       
+The Untouchables                         7.6       
+Straight Outta Compton                   7.6       
+Pan's Labyrinth                          7.6       
+Toy Story 3                              7.6       
+Ernest & Celestine                       7.6       
+Life of Brian                            7.6       
+The Conversation                         7.5       
+Moon                                     7.5       
+The King's Speech                        7.5       
+Zindagi Na Milegi Dobara                 7.5       
+Strangers on a Train                     7.5       
+The Graduate                             7.5       
+Little Miss Sunshine                     7.5       
+Ip Man                                   7.5       
+Fantastic Mr. Fox                        7.5       
+Elite Squad: The Enemy Within            7.5       
+The King of Comedy                       7.5       
+Rushmore                                 7.5       
+The Dark Knight Rises                    7.5       
+Logan                                    7.5       
+Platoon                                  7.5       
+Philadelphia                             7.5       
+The Hobbit: The Desolation of Smaug      7.5       
+Serpico                                  7.5       
+How to Train Your Dragon                 7.5       
+Dazed and Confused                       7.4       
+Synecdoche, New York                     7.4       
+Where Eagles Dare                        7.4       
+Glory                                    7.4       
+The Diving Bell and the Butterfly        7.4       
+Star Trek Into Darkness                  7.4       
+The Conjuring                            7.4       
+In Bruges                                7.4       
+Philomena                                7.4       
+Frozen                                   7.4       
+Titanic                                  7.4       
+Pirates of the Caribbean: The Curse      7.4       
+The Goonies                              7.4       
+Midnight in Paris                        7.4       
+Hotel Rwanda                             7.4       
+October Sky                              7.4       
+Ratatouille                              7.4       
+Office Space                             7.4       
+Hot Fuzz                                 7.4       
+Lost in Translation                      7.3       
+Donnie Brasco                            7.3       
+Predestination                           7.3       
+The Insider                              7.3       
+The Great Gatsby                         7.3       
+Mad Max 2: The Road Warrior              7.3       
+Detachment                               7.3       
+The Others                               7.3       
+Road to Perdition                        7.3       
+Toy Story 2                              7.3       
+Tucker and Dale vs Evil                  7.3       
+Nebraska                                 7.3       
+When We Were Kings                       7.3       
+The Bourne Ultimatum                     7.3       
+Gravity                                  7.3       
+Food, Inc.                               7.3       
+Garden State                             7.2       
+Sicario                                  7.2       
+Raising Arizona                          7.2       
+Mean Streets                             7.2       
+Mad Max: Fury Road                       7.2       
+Law Abiding Citizen                      7.2       
+The Fugitive                             7.2       
+When Harry Met Sally...                  7.2       
+Life of Pi                               7.2       
+District 9                               7.2       
+Infernal Affairs II                      7.2       
+Scott Pilgrim vs. the World              7.2       
+The Hurricane                            7.2       
+End of Watch                             7.2       
+The Meaning of Life                      7.2       
+The Social Network                       7.1       
+The Girl with the Dragon Tattoo          7.1       
+Say Anything...                          7.1       
+The Way Way Back                         7.1       
+Drugstore Cowboy                         7.1       
+Limitless                                7.1       
+Frost/Nixon                              7.1       
+Leaving Las Vegas                        7.1       
+Fear and Loathing in Las Vegas           7.1       
+Keith                                    7.1       
+The Hunt for Red October                 7.1       
+Good Morning, Vietnam                    7.1       
+The Kings of Summer                      7.1       
+The Boat That Rocked                     7.1       
+Lord of War                              7         
+Eyes Wide Shut                           7         
+Once Upon a Time in the Wild, Wild       7         
+The Pirate Bay: Away From Keyboard       7         
+Juno                                     7         
+Fast Times at Ridgemont High             7         
+God Bless America                        7         
+Despicable Me 2                          7         
+The Rise and Rise of Bitcoin             7         
+Crazy, Stupid, Love.                     7         
+Gangs of New York                        7         
+The Pirate Bay: Away From Keyboard       7         
+Friday                                   7         
+The Terminal                             7         
+Monsters University                      7         
+Crimson Tide                             7         
+Watchmen                                 7         
+The Maze Runner                          7         
+Easy Rider                               7         
+Watchmen                                 7         
+Galaxy Quest                             6.9       
+Mud                                      6.9       
+Skyfall                                  6.9       
+OMG: Oh My God!                          6.9       
+The Aviator                              6.9       
+It's Kind of a Funny Story               6.9       
+In the Loop                              6.9       
+Silver Linings Playbook                  6.9       
+Disconnect                               6.9       
+John Wick                                6.9       
+United 93                                6.9       
+Skyfall                                  6.9       
+Rescue Dawn                              6.8       
+Insomnia                                 6.8       
+The Fate of the Furious                  6.8       
+Son of Batman                            6.8       
+Stargate                                 6.8       
+The Place Beyond the Pines               6.8       
+Primer                                   6.8       
+Sholay                                   6.8       
+Traffic                                  6.8       
+Mr. Brooks                               6.8       
+Grindhouse                               6.8       
+Revolutionary Road                       6.7       
+The World's End                          6.7       
+Ronin                                    6.7       
+Enemy of the State                       6.7       
+Seven Psychopaths                        6.7       
+Sneakers                                 6.7       
+The Thomas Crown Affair                  6.7       
+Spaceballs                               6.7       
+It Follows                               6.6       
+The Italian Job                          6.6       
+Déjà Vu                                  6.6       
+State of Play                            6.6       
+The Book of Eli                          6.6       
+Final Fantasy VII: Advent Children       6.6       
+Super                                    6.6       
+Three Kings                              6.6       
+Zero Dark Thirty                         6.6       
+Enough Said                              6.6       
+Ender's Game                             6.6       
+Margin Call                              6.6       
+Dredd                                    6.6       
+Tinker Tailor Soldier Spy                6.6       
+Old School                               6.6       
+Time Bandits                             6.6       
+Tron                                     6.6       
+Eight Below                              6.6       
+Crying Fist                              6.5       
+Happy Gilmore                            6.5       
+DC Showcase: Catwoman                    6.5       
+Friends with Benefits                    6.5       
+Sleepless in Seattle                     6.5       
+Step Brothers                            6.5       
+Vanilla Sky                              6.5       
+Man of Steel                             6.5       
+Michael Clayton                          6.5       
+Udaan                                    6.5       
+Paul                                     6.5       
+The Wedding Singer                       6.5       
+Kill the Messenger                       6.5       
+Panic Room                               6.5       
+Dumb and Dumber                          6.5       
+Tropic Thunder                           6.4       
+Oblivion                                 6.4       
+Epic                                     6.4       
+Risky Business                           6.4       
+Get Shorty                               6.3       
+The Rundown                              6.3       
+This Is the End                          6.3       
+Smashed                                  6.3       
+Spectre                                  6.3       
+Running                                  6.3       
+Green Zone                               6.3       
+Hitchcock                                6.3       
+Room 237                                 6.2       
+Talladega Nights: The Ballad of Ric      6.2       
+Gangster Squad                           6.2       
+The Internship                           6.1       
+Babe                                     6         
+New                                      6         
+Mushi-Shi: The Movie                     6         
+The Invention of Lying                   6         
+Walking Tall                             6         
+Stand Up Guys                            5.9       
+Don Jon                                  5.9       
+Into the Blue                            5.8       
+The Baytown Outlaws                      5.8       
+Devil                                    5.8       
+Disclosure                               5.8       
+Original Sin                             5.8       
+Batman v Superman: Dawn of Justice       5.6       
+Mr. Deeds                                5.6       
+You Don't Mess with the Zohan            5.5       
+Death at a Funeral                       5.5       
+Ghostbusters                             5.3       
+Snakes on a Plane                        5.1       
+How to Make Love to a Woman              4.9       
+Underground                              4.8       
+The Disappointments Room                 4.3       
+The Starving Games                       4.1       
+X-Men: The Legend of Wolverine           0         
+War and Games                            0         
+Captain Marvel                           0         
+The Great Beauty: Colombia               0         
+Bhoomi Malayalam                         0         
+Bioscope (Marathi Movie)                 0         

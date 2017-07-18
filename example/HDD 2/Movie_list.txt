@@ -1,0 +1,9 @@
+This list was generated with meta-movie. [https://www.github.com/akhilnareshkumar/meta-movie] 
+
+
+Movie Title                              Rating    
+-----------------------------------------------
+Donnie Darko                             7.7       
+Drugstore Cowboy                         7.1       
+Dredd                                    6.6       
+Dumb and Dumber                          6.5       
