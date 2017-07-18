@@ -8,6 +8,5 @@ Meta-movie fetches information about the movies in your collection. Sort your mo
 
 ### Cool, how to use this?
 Works on Linux. Not tested on Windows and Mac yet.
-* Put the pathname of your movies folder in 'meta_movie.py'
-* Run the python code, `python meta-movie.py`
+* Run this on the terminal: `python meta-movie.py /path/to/your/movies/folder/`
 * Install uninstalled python packages if any, using pip, `sudo -H pip install <python-package-name>`
