@@ -36,13 +36,25 @@ def prepare_path(path):
     return path.replace('\ ', ' ')
 
 def get_name(path):
-    total_count = path.count('/')
-    count = 0
-    for i in range(len(path)):
-        if path[i] == '/':
-            count += 1
-            if count == total_count-1:
-                return path[i+1:]
+    if path[len(path)-1] == '/':
+        total_count = path.count('/')
+        count = 0
+        for i in range(len(path)):
+            if path[i] == '/':
+                count += 1
+                if count == total_count-1:
+                    return path[i+1:]
+    else:
+        total_count = path.count('/')
+        count = 0
+        for i in range(len(path)):
+            if path[i] == '/':
+                count += 1
+                if count == total_count:
+                    temp = path[i+1:]
+        for i in range(len(temp)-1,0,-1):
+            if temp[i] == '.':
+                return temp[:i]
 
 def formatted(result):
     return "{:40} {:<10}".format((result['title'])[:35], result['vote_average'])
@@ -59,58 +71,61 @@ def search_online(movie_name):
 
 
 
+
 def search_movies(fullpath):
-    for folder in glob.glob(fullpath+'*/'):
-        folder = get_name(folder)
-        print "{:50}".format(folder[:45]),
+    extensions = ['*/', '*.mp4', '*.avi', '*.mkv']
+    for ext in extensions:
+        for file in glob.glob(fullpath+ext):
+            file = get_name(file)
+            print "{:50}".format(file[:45]),
 
-        if folder.find('(') != -1:
-            year = folder[folder.find('(')+1:folder.find(')')]
-            movie_name = folder[:folder.find('(')]
-            search_online(movie_name)
-
-        elif folder.find('[') != -1:
-            movie_name = folder[:folder.find('[')]
-            search_online(movie_name)
-
-        elif folder.count('.') >= 3:
-            temp = folder.split('.')
-            movie_name = ""
-            is_result_found = False
-            for i in temp:
-                if i.isdigit() and int(i) > 1900 and int(i) < 2100:
-                    year = i
-                    response = search.movie(query=movie_name)
-                    if len(search.results):
-                        result = search.results[0]
-                        identified.append(result)
-                        print formatted(result)
-                        is_result_found = True
-                        break
-                movie_name = movie_name + i + " "
-            if is_result_found == False:
+            if file.find('(') != -1:
+                year = file[file.find('(')+1:file.find(')')]
+                movie_name = file[:file.find('(')]
                 search_online(movie_name)
 
-        elif folder.count(' ') >= 3:
-            temp = folder.split(' ')
-            movie_name = ""
-            is_result_found = False
-            for i in temp:
-                if i.isdigit() and int(i) > 1900 and int(i) < 2100:
-                    year = i
-                    response = search.movie(query=movie_name)
-                    if len(search.results):
-                        result = search.results[0]
-                        identified.append(result)
-                        print formatted(result)
-                        is_result_found = True
-                        break
-                movie_name = movie_name + i + " "
-            if is_result_found == False:
+            elif file.find('[') != -1:
+                movie_name = file[:file.find('[')]
                 search_online(movie_name)
 
-        else:
-            search_online(folder)
+            elif file.count('.') >= 3:
+                temp = file.split('.')
+                movie_name = ""
+                is_result_found = False
+                for i in temp:
+                    if i.isdigit() and int(i) > 1900 and int(i) < 2100:
+                        year = i
+                        response = search.movie(query=movie_name)
+                        if len(search.results):
+                            result = search.results[0]
+                            identified.append(result)
+                            print formatted(result)
+                            is_result_found = True
+                            break
+                    movie_name = movie_name + i + " "
+                if is_result_found == False:
+                    search_online(movie_name)
+
+            elif file.count(' ') >= 3:
+                temp = file.split(' ')
+                movie_name = ""
+                is_result_found = False
+                for i in temp:
+                    if i.isdigit() and int(i) > 1900 and int(i) < 2100:
+                        year = i
+                        response = search.movie(query=movie_name)
+                        if len(search.results):
+                            result = search.results[0]
+                            identified.append(result)
+                            print formatted(result)
+                            is_result_found = True
+                            break
+                    movie_name = movie_name + i + " "
+                if is_result_found == False:
+                    search_online(movie_name)
+
+            else:
+                search_online(file)
 
 
 
@@ -155,6 +170,8 @@ class color:
 check_commandline()
 
 fullpath = prepare_path(sys.argv[1])
+
+
 
 # Get an API key from http://themoviedb.org
 tmdb.API_KEY = 'f76f07b5a2930828c1add5d5ba10c00e'
