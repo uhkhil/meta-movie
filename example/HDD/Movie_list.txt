@@ -114,6 +114,7 @@ October Sky                              7.4
 Ratatouille                              7.4       
 Office Space                             7.4       
 Hot Fuzz                                 7.4       
+DC Showcase: Green Arrow                 7.3       
 Lost in Translation                      7.3       
 Donnie Brasco                            7.3       
 Predestination                           7.3       
@@ -190,7 +191,6 @@ Silver Linings Playbook                  6.9
 Disconnect                               6.9       
 John Wick                                6.9       
 United 93                                6.9       
-Skyfall                                  6.9       
 Rescue Dawn                              6.8       
 Insomnia                                 6.8       
 The Fate of the Furious                  6.8       
@@ -201,7 +201,6 @@ Primer                                   6.8
 Sholay                                   6.8       
 Traffic                                  6.8       
 Mr. Brooks                               6.8       
-Grindhouse                               6.8       
 Revolutionary Road                       6.7       
 The World's End                          6.7       
 Ronin                                    6.7       
@@ -230,7 +229,6 @@ Tron                                     6.6
 Eight Below                              6.6       
 Crying Fist                              6.5       
 Happy Gilmore                            6.5       
-DC Showcase: Catwoman                    6.5       
 Friends with Benefits                    6.5       
 Sleepless in Seattle                     6.5       
 Step Brothers                            6.5       
@@ -242,7 +240,9 @@ Paul                                     6.5
 The Wedding Singer                       6.5       
 Kill the Messenger                       6.5       
 Panic Room                               6.5       
+James Bond                               6.5       
 Dumb and Dumber                          6.5       
+Planet Terror                            6.5       
 Tropic Thunder                           6.4       
 Oblivion                                 6.4       
 Epic                                     6.4       
@@ -271,7 +271,7 @@ The Baytown Outlaws                      5.8
 Devil                                    5.8       
 Disclosure                               5.8       
 Original Sin                             5.8       
-Batman v Superman: Dawn of Justice       5.6       
+Batman v Superman: Dawn of Justice       5.7       
 Mr. Deeds                                5.6       
 You Don't Mess with the Zohan            5.5       
 Death at a Funeral                       5.5       
