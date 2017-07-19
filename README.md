@@ -7,6 +7,10 @@ Meta-movie fetches information about the movies in your collection. Sorts your m
 * You borrowed your friend's HDD, you need to find which are the best movies he/she has.
 
 ### Cool, how to use this?
-Works on Linux. Not tested on Windows and Mac yet.
+Works on Linux for now. Not tested on Windows and Mac yet.
 * Install dependencies if any, using pip, `sudo -H pip install -r requirements.txt`
 * Run this on the terminal: `python meta-movie.py path/to/the/movies/folder/`
+
+![Terminal](/screenshots/terminal.png?raw=true "Terminal Output")
+
+![Text](/screenshots/text.png?raw=true "Text file")
