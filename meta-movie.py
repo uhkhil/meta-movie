@@ -1,39 +1,40 @@
-import tmdbsimple as tmdb, os, glob, sys, operator
+import os, sys, operator, glob
+from pathlib import Path
+
+import tmdbsimple as tmdb
 
 # fullpath = "/media/akhil/New Volume/English Movies/"
 # fullpath = "/media/akhil/New Volume/Tv & Movie Series/"
 # fullpath = "/home/akhil/Git/meta-movie/example/HDD\ 2/"
 
-def printUsage():
+def print_usage():
 	print "usage: python meta-movie.py [/fullpath/to/the/movies/folder/] \n"
 	sys.exit()
 
-def isPath(arg):
-	return True
+def is_path(arg):
+	my_file = Path(arg)
+	if my_file.is_dir():
+		return True
+	else:
+		return False
 
-def fullpathWithSpaces(fullpath):
+def prepare_path(fullpath):
 	if fullpath[len(fullpath)-1] != "/":
 		fullpath = fullpath + "/"
-	return fullpath.replace('\ ',' ')
-
+	return fullpath.replace('\ ', ' ')
 
 
 # Command check
-
 if len(sys.argv) == 1:
 	print "meta-movie: Missing operand."
-	printUsage()
-elif isPath(sys.argv[1]) == False:
-	print "meta-movie: Invalid folder path: ",sys.argv[1]
-	printUsage()
-
-
+	print_usage()
+elif is_path(sys.argv[1]) == False:
+	print "meta-movie: Invalid folder path: ", sys.argv[1]
+	print_usage()
 
 
 fullpath = sys.argv[1]
-
-fullpath = fullpathWithSpaces(fullpath)
-
+fullpath = prepare_path(fullpath)
 
 
 # To allow special characters
@@ -51,10 +52,10 @@ class color:
    END = '\033[0m'
 
 
-print color.CYAN + color.BOLD +  "{:50} {:40} {:<10}".format("Folder Name","Movie Title","Rating") + color.END
+print color.CYAN + color.BOLD +  "{:50} {:40} {:<10}".format("Folder Name", "Movie Title", "Rating") + color.END
 
 
-def getName(fullpath):
+def get_name(fullpath):
 	total_count = fullpath.count('/')
 	count = 0
 	for i in range(len(fullpath)):
@@ -63,113 +64,106 @@ def getName(fullpath):
 			if count == total_count-1:
 				return fullpath[i+1:]
 
-
-
-def formattedInfo(result):
+def formatted(result):
 	return "{:40} {:<10}".format((result['title'])[:35], result['vote_average'])
 
-def searchOnline(movie_name):
+def search_online(movie_name):
 	response = search.movie(query=movie_name)
 	if len(search.results):
 		result = search.results[0]
-		allMovies.append(result)
-		print formattedInfo(result)
+		identified.append(result)
+		print formatted(result)
 	else:
 		unidentified.append(movie_name)
 		print
 
-def linuxFullPath(fullpath):
-	return fullpath.replace(' ','\ ')
-
-def printStatistics():
-	print "\n","-----" * 20,"\n"
+def print_stats():
+	print "\n", "-----"*20, "\n"
 	print color.CYAN + color.BOLD + "Unidentified Movies:" + color.END
 	for x in unidentified:
 		print x
-	print color.CYAN + color.BOLD + "\nMovies found:" + color.END , len(allMovies)
+	print color.CYAN + color.BOLD + "\nMovies found:" + color.END , len(identified)
 	print
-	# print "Unidentified Movies", len(glob.glob(fullpath+'*/'))
-	# return
 
 
-allMovies = []
+identified = []
 unidentified = []
 
 for folder in glob.glob(fullpath+'*/'):
 
 	# Fullpath doesn't work
-	folder = getName(folder)
+	folder = get_name(folder)
 
 	print "{:50}".format(folder[:45]),
 
 	if folder.find('(') != -1:
 		year = folder[folder.find('(')+1:folder.find(')')]
 		movie_name = folder[:folder.find('(')]
-		searchOnline(movie_name)
+		search_online(movie_name)
 
 	elif folder.find('[') != -1:
 		movie_name = folder[:folder.find('[')]
-		searchOnline(movie_name)
+		search_online(movie_name)
 
-	elif folder.count('.')>=3:
+	elif folder.count('.') >= 3:
 		temp = folder.split('.')
 		movie_name = ""
-		isResultPrinted = False
+		is_result_found = False
 		for i in temp:
-			if i.isdigit() and int(i)>1900 and int(i)<2100:
+			if i.isdigit() and int(i) > 1900 and int(i) < 2100:
 				year = i
 				response = search.movie(query=movie_name)
 				if len(search.results):
 					result = search.results[0]
-					allMovies.append(result)
-					print formattedInfo(result)
-					isResultPrinted = True
+					identified.append(result)
+					print formatted(result)
+					is_result_found = True
 					break
 			movie_name = movie_name + i + " "
 
-		if isResultPrinted == False:
-			searchOnline(movie_name)
+		if is_result_found == False:
+			search_online(movie_name)
 
-	elif folder.count(' ')>=3:
+	elif folder.count(' ') >= 3:
 		temp = folder.split(' ')
 		movie_name = ""
-		isResultPrinted = False
+		is_result_found = False
 		for i in temp:
-			if i.isdigit() and int(i)>1900 and int(i)<2100:
+			if i.isdigit() and int(i) > 1900 and int(i) < 2100:
 				year = i
 				response = search.movie(query=movie_name)
 				if len(search.results):
 					result = search.results[0]
-					allMovies.append(result)
-					print formattedInfo(result)
-					isResultPrinted = True
+					identified.append(result)
+					print formatted(result)
+					is_result_found = True
 					break
 			movie_name = movie_name + i + " "
-		if isResultPrinted == False:
-			searchOnline(movie_name)
+		if is_result_found == False:
+			search_online(movie_name)
 
 	else:
-		searchOnline(folder)
+		search_online(folder)
 
 try:
-	allMovies.sort(key=operator.itemgetter('vote_average'),reverse=True)
+	identified.sort(key=operator.itemgetter('vote_average'), reverse=True)
 except KeyError:
 	print
 
-print "\n","-----" * 20,"\n"
+print "\n", "-----"*20, "\n"
 print "Sorted List: [Saved to MovieList.txt]\n"
-print color.CYAN + color.BOLD +  "{:40} {:<10}".format("Movie Title","Rating") + color.END
-for x in allMovies:
-	print formattedInfo(x)
+print color.CYAN + color.BOLD +  "{:40} {:<10}".format("Movie Title", "Rating") + color.END
+for x in identified:
+	print formatted(x)
 
-if len(allMovies):
-	output_file = open(fullpath+'Movie_list.txt','w')
+if len(identified):
+	output_file = open(fullpath + 'Movie_list.txt', 'w')
 	output_file.write("This list was generated with meta-movie. [https://www.github.com/akhilnareshkumar/meta-movie] \n\n\n")
-	output_file.write("{:40} {:<10}\n".format("Movie Title","Rating"))
+	output_file.write("{:40} {:<10}\n".format("Movie Title", "Rating"))
 	output_file.write("-----------------------------------------------\n")
-	for x in allMovies:
-		output_file.write(formattedInfo(x))
+	for x in identified:
+		output_file.write(formatted(x))
 		output_file.write("\n")
 	output_file.close()
 
-printStatistics()
+print_stats()
